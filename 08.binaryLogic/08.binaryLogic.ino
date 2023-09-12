@@ -31,7 +31,27 @@
     
 */
 
+
+
 void setup() {
+ Serial.begin(9600);
+ Serial.println("SM working");
+ Serial.println("------------------------");
+  int myInt1 = 4;
+  int myInt2 = 2;
+  int result = myInt1 + myInt2;
+
+while (result < 10) {
+  Serial.println(result);
+  result++;
+  result++;
+}
+
+
+
+  Serial.println(myInt1 / myInt2);
+
+
 
 }
 
